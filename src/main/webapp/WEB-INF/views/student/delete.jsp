@@ -9,7 +9,22 @@
 <html>
 <head>
     <div>
-        <form action="/students/delete/">
+        <form action="/students/delete/{id}">
+            <input type="text" name="id" placeholder="id">
+            <br>
+            <input type="text" name="name" placeholder="name">
+            <br>
+            <input type="text" name="name" placeholder="name">
+            <br>
+            <input type="text" name="address" placeholder="address">
+            <br>
+            <input type="text" name="phone" placeholder="phone">
+            <br>
+            <input type="text" name="email" placeholder="email">
+            <br>
+            <input type="text" name="classRoom" placeholder="classRoom">
+            <br>
+            <p>Bạn có chắc chắn muốn xoá không ?</p>
             <button><p>YES</p></button> | <button><p>NO</p></button>
         </form>
     </div>

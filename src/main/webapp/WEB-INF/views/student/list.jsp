@@ -21,6 +21,16 @@
         border: 1px dotted #555;
     }
 </style>
+<div align="center">
+    <h2>
+        <a href="/students/create">Create New Student</a>
+    </h2>
+  <div>
+      <form action="/search">
+          <input type="text" name="search" placeholder="search by name">
+          <button>Search</button>
+      </form>
+  </div>
 <table>
     <caption>Student List</caption>
     <thead>
@@ -28,11 +38,12 @@
         <th>Id</th>
         <th>Name</th>
         <th>Date Of Birth</th>
-        <th>Address</th>
         <th>Phone number</th>
         <th>Email</th>
         <th>Address</th>
         <th>Class Room</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     </thead>
     <tbody>
@@ -60,14 +71,15 @@
                 <c:out value="${c.classRoom}"/>
             </td>
             <td>
-                <a href="/students/edit/" name="${c.id}">Edit</a>
+                <a href="/students/edit/${c.id}">Edit</a>
             </td>
             <td>
-                <a href="/students/delete/" name="${c.id}">Delete</a>
+                <a href="/students/delete/${c.id}">Delete</a>
             </td>
         </tr>
     </c:forEach>
     </tbody>
 </table>
+</div>
 </body>
 </html>

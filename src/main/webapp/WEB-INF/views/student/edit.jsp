@@ -12,7 +12,7 @@
 </head>
 <body>
 <div align="center">
-    <form action="/students/edit/" name="student">
+    <form action="/students/edit/{id}" name="student">
         <input type="text" name="id" placeholder="id">
         <br>
         <input type="text" name="name" placeholder="name">
