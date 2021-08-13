@@ -5,7 +5,7 @@ import java.util.List;
 public interface GeneralCRUD<T> {
     List<T> findAll();
 
-    T creat(T t);
+    void creat(T t);
 
     T findByName(String name);
 
